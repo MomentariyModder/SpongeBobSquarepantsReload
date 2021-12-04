@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:sugar"
+    },
+    "1": {
+      "item": "minecraft:oak_trapdoor"
+    },
+    "2": {
+      "item": "minecraft:sugar"
+    },
+    "3": {
+      "item": "minecraft:kelp"
+    },
+    "4": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "5": {
+      "item": "minecraft:kelp"
+    },
+    "7": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:kk_coca_cola",
+    "count": 1
+  }
+}

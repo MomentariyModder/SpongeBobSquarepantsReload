@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="spongebobsquarepantsmodreloaded"
+version="4.0"
+displayName="SpongeBob SquarePants Reload"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://perodiumcraft.ucoz.net"
+updateJSONURL="https://raw.githubusercontent.com/MomentariyModder/versions/main/SSReload/version.json"
+logoFile="logo.png"
+authors="MomentariyModder, NemanCraft"
+description='''
+The SpongeBob SquarePants mod will give you cartoon stuff, and which ones? You tell me. Let's start with the mobs: our buddy SpongeBob, starfish Patrick, Sandy squirrel, always the disgruntled Squidward, who loves loot Krabs, and the one who steals his Plankton recipe every time, etc.
+'''
+
+[[dependencies.spongebobsquarepantsmodreloaded]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.spongebobsquarepantsmodreloaded]]
+    modId="momentariycore2"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+

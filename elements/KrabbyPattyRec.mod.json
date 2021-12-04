@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TomatoSlice"
+      },
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": "Blocks.SEA_PICKLE"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "CUSTOM:BurgerSutlet"
+      },
+      {
+        "value": "CUSTOM:CheeseSlice"
+      },
+      {
+        "value": "CUSTOM:SecretFormula"
+      },
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": "CUSTOM:Spatula"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KrabbyPatty"
+    },
+    "name": "krabbypattyrec",
+    "namespace": "mod"
+  }
+}

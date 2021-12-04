@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spongebobsquarepantsmodreloaded:knife"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:salt"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:secret_ingredient"
+    }
+  ],
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:french_fries",
+    "count": 4
+  }
+}

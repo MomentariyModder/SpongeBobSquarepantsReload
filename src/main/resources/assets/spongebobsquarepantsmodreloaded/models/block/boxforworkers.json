@@ -1,0 +1,10 @@
+{
+  "parent": "spongebobsquarepantsmodreloaded:custom/box_for_workers",
+  "textures": {
+    "all": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "1": "spongebobsquarepantsmodreloaded:blocks/black_concrete",
+    "2": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "missing": "spongebobsquarepantsmodreloaded:blocks/"
+  }
+}

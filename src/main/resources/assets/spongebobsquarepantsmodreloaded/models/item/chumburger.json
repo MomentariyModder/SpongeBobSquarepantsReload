@@ -1,0 +1,9 @@
+{
+  "parent": "spongebobsquarepantsmodreloaded:custom/chumburger",
+  "textures": {
+    "0": "spongebobsquarepantsmodreloaded:blocks/krustycrab1",
+    "1": "spongebobsquarepantsmodreloaded:blocks/krustycrab2",
+    "2": "spongebobsquarepantsmodreloaded:blocks/cb1",
+    "particle": "spongebobsquarepantsmodreloaded:items/krabby_patty"
+  }
+}

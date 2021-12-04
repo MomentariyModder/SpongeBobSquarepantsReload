@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "spongebobsquarepantsmodreloaded:block/bikinibottomdeminsions_portal_ew"
+    },
+    "axis=x": {
+      "model": "spongebobsquarepantsmodreloaded:block/bikinibottomdeminsions_portal_ns"
+    }
+  }
+}

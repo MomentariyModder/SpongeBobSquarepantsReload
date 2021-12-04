@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "kkkelps1",
+        "1": "kkkelps2",
+        "2": "kkkelps3",
+        "3": "kkkelps4"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "spongebobsquarepantsmodreloaded:blocks/kelp_plant",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/kelp_plant"
+  }
+}

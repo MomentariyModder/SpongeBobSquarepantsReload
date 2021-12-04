@@ -1,0 +1,11 @@
+{
+  "parent": "spongebobsquarepantsmodreloaded:custom/casa2",
+  "textures": {
+    "all": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "0": "spongebobsquarepantsmodreloaded:blocks/white_concrete",
+    "1": "spongebobsquarepantsmodreloaded:blocks/black_concrete",
+    "3": "spongebobsquarepantsmodreloaded:blocks/gray_concrete",
+    "missing": "spongebobsquarepantsmodreloaded:blocks/"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "spongebobsquarepantsmodreloaded:block/cashbox"
+    },
+    "facing=east": {
+      "model": "spongebobsquarepantsmodreloaded:block/cashbox",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "spongebobsquarepantsmodreloaded:block/cashbox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spongebobsquarepantsmodreloaded:block/cashbox",
+      "y": 270
+    }
+  }
+}

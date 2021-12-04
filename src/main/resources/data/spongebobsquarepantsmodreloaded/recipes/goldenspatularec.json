@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "spongebobsquarepantsmodreloaded:spatula"
+  },
+  "addition": {
+    "item": "minecraft:gold_block"
+  },
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:golden_spatula"
+  }
+}

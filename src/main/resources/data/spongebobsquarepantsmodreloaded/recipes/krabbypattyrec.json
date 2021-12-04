@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "spongebobsquarepantsmodreloaded:tomato_slice"
+    },
+    "1": {
+      "item": "minecraft:bread"
+    },
+    "2": {
+      "item": "minecraft:sea_pickle"
+    },
+    "3": {
+      "item": "minecraft:kelp"
+    },
+    "4": {
+      "item": "spongebobsquarepantsmodreloaded:burger_sutlet"
+    },
+    "5": {
+      "item": "spongebobsquarepantsmodreloaded:cheese_slice"
+    },
+    "6": {
+      "item": "spongebobsquarepantsmodreloaded:secret_formula"
+    },
+    "7": {
+      "item": "minecraft:bread"
+    },
+    "8": {
+      "item": "spongebobsquarepantsmodreloaded:spatula"
+    }
+  },
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:krabby_patty",
+    "count": 1
+  }
+}

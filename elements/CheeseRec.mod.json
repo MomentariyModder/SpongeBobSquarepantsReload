@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "Items.MILK_BUCKET"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Cheese"
+    },
+    "name": "cheeserec",
+    "namespace": "mod"
+  }
+}

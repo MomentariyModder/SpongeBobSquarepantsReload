@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spongebobsquarepantsmodreloaded:cheese"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:knife"
+    }
+  ],
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:cheese_slice",
+    "count": 8
+  }
+}

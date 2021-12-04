@@ -1,0 +1,12 @@
+{
+  "parent": "spongebobsquarepantsmodreloaded:custom/krabbypatty",
+  "textures": {
+    "all": "spongebobsquarepantsmodreloaded:blocks/kc3",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/krustycrab2",
+    "0": "spongebobsquarepantsmodreloaded:blocks/krustycrab1",
+    "1": "spongebobsquarepantsmodreloaded:blocks/krustycrab2",
+    "2": "spongebobsquarepantsmodreloaded:blocks/kc3",
+    "3": "spongebobsquarepantsmodreloaded:blocks/kc4",
+    "4": "spongebobsquarepantsmodreloaded:blocks/kc6"
+  }
+}

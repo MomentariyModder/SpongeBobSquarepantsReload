@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "spongebobsquarepantsmodreloaded:blocks/tomato_crop_stage_1",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/tomato_crop_stage_1"
+  }
+}

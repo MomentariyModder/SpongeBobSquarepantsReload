@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:secret_ingredient"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:knife"
+    },
+    {
+      "item": "spongebobsquarepantsmodreloaded:salt"
+    }
+  ],
+  "result": {
+    "item": "spongebobsquarepantsmodreloaded:burger_sutlet",
+    "count": 2
+  }
+}

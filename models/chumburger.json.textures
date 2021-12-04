@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "krustycrab1",
+        "1": "krustycrab2",
+        "2": "cb1"
+      },
+      "name": "default"
+    }
+  }
+}
