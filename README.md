@@ -1,23 +1,13 @@
-<h3 style="text-align: center;"><img alt="" src="https://perodiumcraft.ucoz.net/SSReload/banner.png" style="width: 954px; height: 240px;" /></h3>
-
-<p style="text-align: center;"><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
-
-<p style="text-align: center;"><strong>Spongebob Squarepants Reload</strong>&nbsp;mod adds Spongebob to minecraft, as well as many different things and mobs related to the cartoon SpongeBob SquarePants.&nbsp;</p>
-
-<p style="text-align: center;">&nbsp;</p>
-
-<p style="text-align: center;">What adds the&nbsp;<strong>Spongebob Squarepants Reload</strong>&nbsp;mod?</p>
-
-<p style="text-align: center;"><br />
-Of course, crabsburgers, yes, now the game will have some famous food and drinks.<br />
-Also, the mod will add mobs in the form of famous cartoon characters, they can be found in the world, some of them are aggressive.<br />
-Many different attributes associated with the cartoon.<br />
-Spawn eggs of all mobs.</p>
-
-<p style="text-align: center;"><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
-
-<p style="text-align: center;"><a href="https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbit.ly%252f2QTMZIL" rel="nofollow"><img height="152" src="https://perodiumcraft.ucoz.net/required.png" width="512" /></a></p>
-
-<p style="text-align: center;"><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
-
-<p style="text-align: center;"><a href="https://github.com/MomentariyModder/release/tree/main/SpongeBob%20Squarepants%20Reload/1.15.2"><img alt="" src="https://perodiumcraft.ucoz.net/mirror15.png" style="width: 256px; height: 76px;" /></a>&nbsp;<a href="https://www.curseforge.com/minecraft/mc-mods/spongebob-squarepants-reload"><img alt="" src="https://perodiumcraft.ucoz.net/curseforge.png" style="width: 256px; height: 76px;" /></a>&nbsp;<a href="https://github.com/MomentariyModder/release/tree/main/SpongeBob%20Squarepants%20Reload/1.16.5"><img alt="" src="https://perodiumcraft.ucoz.net/mirror16.png" style="width: 256px; height: 76px;" /></a></p>
+<p><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong><br /><a href="https://discord.com/invite/9XqgjRd"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/MomentariyModder/branding/main/sites/site/discord.png" alt="" width="250" height="74" /></a></p>
+<p><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/MomentariyModder/branding/main/sites/status/supported.png" width="200" height="59" /></p>
+<p><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
+<p style="text-align: center;"><span style="font-size: 24px;">Spongebob Squarepants Reload mod adds Spongebob to minecraft, as well as many different things and mobs related to the cartoon SpongeBob SquarePants.</span></p>
+<p style="text-align: center;"><span style="font-size: 24px;">What adds the Spongebob Squarepants Reload mod?</span></p>
+<p style="text-align: center;"><span style="font-size: 24px;">Of course, crabsburgers, yes, now the game will have some famous food and drinks. Also, the mod will add mobs in the form of famous cartoon characters, they can be found in the world, some of them are aggressive. Many different attributes associated with the cartoon. Spawn eggs of all mobs.</span></p>
+<p style="text-align: left;"><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong><strong style="font-size: 1.2rem;">&nbsp;</strong></p>
+<p style="text-align: left;"><a href="https://momentariymodder.github.io/ma.html"><strong><img src="https://raw.githubusercontent.com/MomentariyModder/branding/main/sites/required/required.png" alt="" width="250" height="74" /></strong></a></p>
+<p><strong style="font-size: 1.2rem; text-align: center;">▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
+<p><a href="https://momentariymodder.github.io/"><img src="https://raw.githubusercontent.com/MomentariyModder/momentariymodder.github.io/main/images/20211123_123025.png" width="1125" height="375" /></a></p>
+<p><strong>▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</strong></p>
+<p style="text-align: center;"><span style="font-size: 24px; color: #ff0000;"><strong>All rights reserved by MomentariyModder. Nobody has the right to create a port, remake, sequel, etc. my mod. Also, no one has the right to publish my mod on third-party resources.</strong></span></p>
