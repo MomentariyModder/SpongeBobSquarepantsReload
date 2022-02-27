@@ -11,13 +11,10 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.CashboxGUIMenu;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class CashboxGUIScreen extends AbstractContainerScreen<CashboxGUIMenu> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -68,7 +65,7 @@ public class CashboxGUIScreen extends AbstractContainerScreen<CashboxGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Cashbox", 4, 2, -13421773);
+		this.font.draw(poseStack, "Cashbox", 4, 2, -13421773);
 	}
 
 	@Override

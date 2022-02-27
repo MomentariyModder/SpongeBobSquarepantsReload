@@ -27,7 +27,7 @@ public class KrustyCrabFeature extends Feature<NoneFeatureConfiguration> {
 			.setRegistryName("spongebobsquarepantsmodreloaded:krusty_crab");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE.configured(FeatureConfiguration.NONE);
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("desert"));
-	private final List<Block> base_blocks = List.of(Blocks.SAND, Blocks.AIR, Blocks.VOID_AIR, Blocks.CAVE_AIR);
+	private final List<Block> base_blocks = List.of(Blocks.SAND);
 	private StructureTemplate template = null;
 
 	public KrustyCrabFeature() {
@@ -44,10 +44,10 @@ public class KrustyCrabFeature extends Feature<NoneFeatureConfiguration> {
 			return false;
 		if (template == null)
 			template = context.level().getLevel().getStructureManager()
-					.getOrCreate(new ResourceLocation("spongebobsquarepantsmodreloaded", "krustycrabfinal2"));
+					.getOrCreate(new ResourceLocation("spongebobsquarepantsmodreloaded", "krustycrabfinal3"));
 		if (template == null)
 			return false;
-		if ((context.random().nextInt(1000000) + 1) <= 5000) {
+		if ((context.random().nextInt(1000000) + 1) <= 15000) {
 			boolean anyPlaced = false;
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {

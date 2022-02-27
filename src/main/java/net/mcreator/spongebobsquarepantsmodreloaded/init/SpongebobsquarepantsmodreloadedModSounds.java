@@ -20,6 +20,8 @@ public class SpongebobsquarepantsmodreloadedModSounds {
 	static {
 		REGISTRY.put(new ResourceLocation("spongebobsquarepantsmodreloaded", "soundtrack4"),
 				new SoundEvent(new ResourceLocation("spongebobsquarepantsmodreloaded", "soundtrack4")));
+		REGISTRY.put(new ResourceLocation("spongebobsquarepantsmodreloaded", "clarinet"),
+				new SoundEvent(new ResourceLocation("spongebobsquarepantsmodreloaded", "clarinet")));
 	}
 
 	@SubscribeEvent

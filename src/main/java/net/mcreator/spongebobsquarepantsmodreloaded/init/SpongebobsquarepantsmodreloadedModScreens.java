@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.spongebobsquarepantsmodreloaded.client.gui.SecretFormulaGUIScreen;
+import net.mcreator.spongebobsquarepantsmodreloaded.client.gui.FridgeGUIScreen;
 import net.mcreator.spongebobsquarepantsmodreloaded.client.gui.CashboxGUIScreen;
 import net.mcreator.spongebobsquarepantsmodreloaded.client.gui.BoxforworkersGUIScreen;
 
@@ -21,6 +23,8 @@ public class SpongebobsquarepantsmodreloadedModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(SpongebobsquarepantsmodreloadedModMenus.CASHBOX_GUI, CashboxGUIScreen::new);
 			MenuScreens.register(SpongebobsquarepantsmodreloadedModMenus.BOXFORWORKERS_GUI, BoxforworkersGUIScreen::new);
+			MenuScreens.register(SpongebobsquarepantsmodreloadedModMenus.FRIDGE_GUI, FridgeGUIScreen::new);
+			MenuScreens.register(SpongebobsquarepantsmodreloadedModMenus.SECRET_FORMULA_GUI, SecretFormulaGUIScreen::new);
 		});
 	}
 }

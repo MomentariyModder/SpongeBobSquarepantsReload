@@ -16,7 +16,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
-import net.mcreator.spongebobsquarepantsmodreloaded.world.features.plants.KelpsFeature;
 import net.mcreator.spongebobsquarepantsmodreloaded.world.features.PrisonFeature;
 import net.mcreator.spongebobsquarepantsmodreloaded.world.features.KrustyCrabFeature;
 
@@ -32,8 +31,6 @@ public class SpongebobsquarepantsmodreloadedModFeatures {
 				KrustyCrabFeature.GENERATE_BIOMES, KrustyCrabFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(PrisonFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PrisonFeature.GENERATE_BIOMES,
 				PrisonFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(KelpsFeature.FEATURE,
-				new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, KelpsFeature.GENERATE_BIOMES, KelpsFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

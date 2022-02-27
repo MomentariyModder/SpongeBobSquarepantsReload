@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "spongebobsquarepantsmodreloaded:block/fridge"
+    },
+    "facing=east": {
+      "model": "spongebobsquarepantsmodreloaded:block/fridge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "spongebobsquarepantsmodreloaded:block/fridge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spongebobsquarepantsmodreloaded:block/fridge",
+      "y": 270
+    }
+  }
+}

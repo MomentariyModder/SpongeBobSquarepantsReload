@@ -1,0 +1,8 @@
+{
+  "parent": "spongebobsquarepantsmodreloaded:custom/table",
+  "textures": {
+    "all": "spongebobsquarepantsmodreloaded:blocks/sb_krusty_table",
+    "particle": "spongebobsquarepantsmodreloaded:blocks/sb_krusty_table",
+    "0": "spongebobsquarepantsmodreloaded:blocks/sb_krusty_table"
+  }
+}

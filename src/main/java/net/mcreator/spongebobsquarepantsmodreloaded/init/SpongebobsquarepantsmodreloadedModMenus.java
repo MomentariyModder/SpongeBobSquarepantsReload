@@ -12,6 +12,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
+import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.SecretFormulaGUIMenu;
+import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.FridgeGUIMenu;
 import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.CashboxGUIMenu;
 import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.BoxforworkersGUIMenu;
 
@@ -25,6 +27,9 @@ public class SpongebobsquarepantsmodreloadedModMenus {
 			(id, inv, extraData) -> new CashboxGUIMenu(id, inv, extraData));
 	public static final MenuType<BoxforworkersGUIMenu> BOXFORWORKERS_GUI = register("boxforworkers_gui",
 			(id, inv, extraData) -> new BoxforworkersGUIMenu(id, inv, extraData));
+	public static final MenuType<FridgeGUIMenu> FRIDGE_GUI = register("fridge_gui", (id, inv, extraData) -> new FridgeGUIMenu(id, inv, extraData));
+	public static final MenuType<SecretFormulaGUIMenu> SECRET_FORMULA_GUI = register("secret_formula_gui",
+			(id, inv, extraData) -> new SecretFormulaGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

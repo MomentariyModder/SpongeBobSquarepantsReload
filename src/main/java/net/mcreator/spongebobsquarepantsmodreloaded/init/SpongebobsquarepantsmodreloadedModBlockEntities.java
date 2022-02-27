@@ -11,6 +11,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.spongebobsquarepantsmodreloaded.block.entity.FridgeBlockEntity;
 import net.mcreator.spongebobsquarepantsmodreloaded.block.entity.CashboxBlockEntity;
 import net.mcreator.spongebobsquarepantsmodreloaded.block.entity.BoxforworkersBlockEntity;
 
@@ -24,6 +25,8 @@ public class SpongebobsquarepantsmodreloadedModBlockEntities {
 			SpongebobsquarepantsmodreloadedModBlocks.CASHBOX, CashboxBlockEntity::new);
 	public static final BlockEntityType<?> BOXFORWORKERS = register("spongebobsquarepantsmodreloaded:boxforworkers",
 			SpongebobsquarepantsmodreloadedModBlocks.BOXFORWORKERS, BoxforworkersBlockEntity::new);
+	public static final BlockEntityType<?> FRIDGE = register("spongebobsquarepantsmodreloaded:fridge",
+			SpongebobsquarepantsmodreloadedModBlocks.FRIDGE, FridgeBlockEntity::new);
 
 	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_block",
+        "1": "gray_concrete",
+        "2": "black_concrete"
+      },
+      "name": "default"
+    }
+  }
+}

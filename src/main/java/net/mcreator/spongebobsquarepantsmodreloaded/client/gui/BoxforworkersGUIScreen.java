@@ -11,13 +11,10 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.spongebobsquarepantsmodreloaded.world.inventory.BoxforworkersGUIMenu;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class BoxforworkersGUIScreen extends AbstractContainerScreen<BoxforworkersGUIMenu> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -68,8 +65,8 @@ public class BoxforworkersGUIScreen extends AbstractContainerScreen<Boxforworker
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Box for", 6, 7, -13421773);
-		drawString(poseStack, this.font, "Workers", 6, 16, -13421773);
+		this.font.draw(poseStack, "Box for", 6, 7, -13421773);
+		this.font.draw(poseStack, "Workers", 6, 16, -13421773);
 	}
 
 	@Override

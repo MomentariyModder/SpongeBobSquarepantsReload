@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sb_krusty_table"
+      },
+      "name": "default"
+    }
+  }
+}

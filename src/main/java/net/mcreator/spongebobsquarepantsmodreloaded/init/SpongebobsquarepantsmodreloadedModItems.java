@@ -30,6 +30,7 @@ import net.mcreator.spongebobsquarepantsmodreloaded.item.KKCocaColaItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.GoldenSpatulaItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.FrenchFriesItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.DimeItem;
+import net.mcreator.spongebobsquarepantsmodreloaded.item.ClarinetItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.ChumBurgerItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.CheeseSliceItem;
 import net.mcreator.spongebobsquarepantsmodreloaded.item.CheeseItem;
@@ -92,8 +93,12 @@ public class SpongebobsquarepantsmodreloadedModItems {
 			SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI);
 	public static final Item JELLYFISH = register(new SpawnEggItem(SpongebobsquarepantsmodreloadedModEntities.JELLYFISH, -65281, -65281,
 			new Item.Properties().tab(SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI)).setRegistryName("jellyfish_spawn_egg"));
-	public static final Item KELPS = register(SpongebobsquarepantsmodreloadedModBlocks.KELPS, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item KRABBY_PATTY_BLOCK = register(SpongebobsquarepantsmodreloadedModBlocks.KRABBY_PATTY_BLOCK, null);
+	public static final Item KRUSTY_TABLE = register(SpongebobsquarepantsmodreloadedModBlocks.KRUSTY_TABLE,
+			SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI);
+	public static final Item CLARINET = register(new ClarinetItem());
+	public static final Item FRIDGE = register(SpongebobsquarepantsmodreloadedModBlocks.FRIDGE,
+			SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
