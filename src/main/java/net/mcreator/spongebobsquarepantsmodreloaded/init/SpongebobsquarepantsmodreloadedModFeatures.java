@@ -4,55 +4,52 @@
  */
 package net.mcreator.spongebobsquarepantsmodreloaded.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.data.BuiltinRegistries;
-import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
 
 import net.mcreator.spongebobsquarepantsmodreloaded.world.features.PrisonFeature;
 import net.mcreator.spongebobsquarepantsmodreloaded.world.features.KrustyCrabFeature;
+import net.mcreator.spongebobsquarepantsmodreloaded.SpongebobsquarepantsmodreloadedMod;
 
+import java.util.function.Supplier;
 import java.util.Set;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber
 public class SpongebobsquarepantsmodreloadedModFeatures {
-	private static final Map<Feature<?>, FeatureRegistration> REGISTRY = new HashMap<>();
-	static {
-		REGISTRY.put(KrustyCrabFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
-				KrustyCrabFeature.GENERATE_BIOMES, KrustyCrabFeature.CONFIGURED_FEATURE));
-		REGISTRY.put(PrisonFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PrisonFeature.GENERATE_BIOMES,
-				PrisonFeature.CONFIGURED_FEATURE));
+	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES,
+			SpongebobsquarepantsmodreloadedMod.MODID);
+	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
+	public static final RegistryObject<Feature<?>> KRUSTY_CRAB = register("krusty_crab", KrustyCrabFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, KrustyCrabFeature.GENERATE_BIOMES, KrustyCrabFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PRISON = register("prison", PrisonFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PrisonFeature.GENERATE_BIOMES, PrisonFeature::placedFeature));
+
+	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
+		FEATURE_REGISTRATIONS.add(featureRegistration);
+		return REGISTRY.register(registryname, feature);
 	}
 
 	@SubscribeEvent
-	public static void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-		event.getRegistry().registerAll(REGISTRY.keySet().toArray(new Feature[0]));
-		REGISTRY.forEach((feature, registration) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, feature.getRegistryName(),
-				registration.configuredFeature()));
-	}
-
-	@Mod.EventBusSubscriber
-	private static class BiomeFeatureLoader {
-		@SubscribeEvent
-		public static void addFeatureToBiomes(BiomeLoadingEvent event) {
-			for (FeatureRegistration registration : REGISTRY.values()) {
-				if (registration.biomes() == null || registration.biomes().contains(event.getName())) {
-					event.getGeneration().getFeatures(registration.stage()).add(() -> registration.configuredFeature());
-				}
-			}
+	public static void addFeaturesToBiomes(BiomeLoadingEvent event) {
+		for (FeatureRegistration registration : FEATURE_REGISTRATIONS) {
+			if (registration.biomes() == null || registration.biomes().contains(event.getName()))
+				event.getGeneration().getFeatures(registration.stage()).add(registration.placedFeature().get());
 		}
 	}
 
 	private static record FeatureRegistration(GenerationStep.Decoration stage, Set<ResourceLocation> biomes,
-			ConfiguredFeature<?, ?> configuredFeature) {
+			Supplier<Holder<PlacedFeature>> placedFeature) {
 	}
 }

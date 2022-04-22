@@ -13,6 +13,5 @@ public class CheeseSliceItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("cheese_slice");
 	}
 }

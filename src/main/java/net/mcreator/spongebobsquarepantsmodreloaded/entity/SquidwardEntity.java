@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -41,11 +41,11 @@ public class SquidwardEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD, 20, 1, 1));
+				.add(new MobSpawnSettings.SpawnerData(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD.get(), 20, 1, 1));
 	}
 
-	public SquidwardEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD, world);
+	public SquidwardEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD.get(), world);
 	}
 
 	public SquidwardEntity(EntityType<SquidwardEntity> type, Level world) {
@@ -96,7 +96,7 @@ public class SquidwardEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD, SpawnPlacements.Type.ON_GROUND,
+		SpawnPlacements.register(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD.get(), SpawnPlacements.Type.ON_GROUND,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}

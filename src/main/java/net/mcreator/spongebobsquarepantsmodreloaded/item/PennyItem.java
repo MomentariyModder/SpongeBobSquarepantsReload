@@ -10,7 +10,6 @@ import net.mcreator.spongebobsquarepantsmodreloaded.init.Spongebobsquarepantsmod
 public class PennyItem extends Item {
 	public PennyItem() {
 		super(new Item.Properties().tab(SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("penny");
 	}
 
 	@Override

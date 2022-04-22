@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
@@ -26,8 +26,8 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModEntities;
 
 public class ManRayEntity extends Monster {
-	public ManRayEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.MAN_RAY, world);
+	public ManRayEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.MAN_RAY.get(), world);
 	}
 
 	public ManRayEntity(EntityType<ManRayEntity> type, Level world) {
@@ -49,7 +49,7 @@ public class ManRayEntity extends Monster {
 		this.goalSelector.addGoal(3, new FloatGoal(this));
 		this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.8));
 		this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
 	}
 
 	@Override

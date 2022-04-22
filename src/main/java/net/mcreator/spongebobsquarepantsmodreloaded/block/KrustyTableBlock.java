@@ -39,7 +39,6 @@ public class KrustyTableBlock extends Block implements SimpleWaterloggedBlock
 		super(BlockBehaviour.Properties.of(Material.CLOTH_DECORATION).sound(SoundType.SCAFFOLDING).instabreak().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
-		setRegistryName("krusty_table");
 	}
 
 	@Override
@@ -72,7 +71,7 @@ public class KrustyTableBlock extends Block implements SimpleWaterloggedBlock
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
@@ -87,6 +86,7 @@ public class KrustyTableBlock extends Block implements SimpleWaterloggedBlock
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.KRUSTY_TABLE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.KRUSTY_TABLE.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 }

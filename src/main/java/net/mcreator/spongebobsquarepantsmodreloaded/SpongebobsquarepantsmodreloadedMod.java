@@ -16,15 +16,22 @@ package net.mcreator.spongebobsquarepantsmodreloaded;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModTabs;
+import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModItems;
+import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModFeatures;
+import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModEntities;
+import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModBlocks;
+import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +48,13 @@ public class SpongebobsquarepantsmodreloadedMod {
 
 	public SpongebobsquarepantsmodreloadedMod() {
 		SpongebobsquarepantsmodreloadedModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		SpongebobsquarepantsmodreloadedModBlocks.REGISTRY.register(bus);
+		SpongebobsquarepantsmodreloadedModItems.REGISTRY.register(bus);
+		SpongebobsquarepantsmodreloadedModEntities.REGISTRY.register(bus);
+		SpongebobsquarepantsmodreloadedModBlockEntities.REGISTRY.register(bus);
+		SpongebobsquarepantsmodreloadedModFeatures.REGISTRY.register(bus);
+
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

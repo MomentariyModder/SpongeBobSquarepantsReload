@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 27,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "cooked_beef",
     "customModelName": "Normal",
-    "name": "Burger Ñutlet",
+    "name": "Burger ï¿½utlet",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {

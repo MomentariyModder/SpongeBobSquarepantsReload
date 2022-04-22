@@ -17,7 +17,6 @@ public class KrabbyPattyItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(8f)
 
 						.build()));
-		setRegistryName("krabby_patty");
 	}
 
 	@Override

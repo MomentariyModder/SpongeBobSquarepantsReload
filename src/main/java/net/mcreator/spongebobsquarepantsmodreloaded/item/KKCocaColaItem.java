@@ -15,7 +15,6 @@ public class KKCocaColaItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("kk_coca_cola");
 	}
 
 	@Override

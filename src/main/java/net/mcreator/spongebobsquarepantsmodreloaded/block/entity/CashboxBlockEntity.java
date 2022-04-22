@@ -37,7 +37,7 @@ public class CashboxBlockEntity extends RandomizableContainerBlockEntity impleme
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public CashboxBlockEntity(BlockPos position, BlockState state) {
-		super(SpongebobsquarepantsmodreloadedModBlockEntities.CASHBOX, position, state);
+		super(SpongebobsquarepantsmodreloadedModBlockEntities.CASHBOX.get(), position, state);
 	}
 
 	@Override
@@ -49,22 +49,21 @@ public class CashboxBlockEntity extends RandomizableContainerBlockEntity impleme
 	}
 
 	@Override
-	public CompoundTag save(CompoundTag compound) {
-		super.save(compound);
+	public void saveAdditional(CompoundTag compound) {
+		super.saveAdditional(compound);
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
-		return compound;
 	}
 
 	@Override
 	public ClientboundBlockEntityDataPacket getUpdatePacket() {
-		return new ClientboundBlockEntityDataPacket(this.worldPosition, 0, this.getUpdateTag());
+		return ClientboundBlockEntityDataPacket.create(this);
 	}
 
 	@Override
 	public CompoundTag getUpdateTag() {
-		return this.save(new CompoundTag());
+		return this.saveWithFullMetadata();
 	}
 
 	@Override

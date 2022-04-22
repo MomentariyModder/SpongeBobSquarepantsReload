@@ -15,9 +15,9 @@ public class KrabbyPattyBlockOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY);
+			ItemStack _setstack = new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get());
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

@@ -27,18 +27,18 @@ import net.mcreator.spongebobsquarepantsmodreloaded.client.renderer.BarnacleBoyR
 public class SpongebobsquarepantsmodreloadedModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB, SpongeBobRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.PATRICK, PatrickRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD, SquidwardRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MR_KRABS, MrKrabsRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SANDY, SandyRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SQUILIAM, SquiliamRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MERMAID_MAN, MermaidManRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.BARNACLE_BOY, BarnacleBoyRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.PLANKTON, PlanktonRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.DIRTY_BUBBLE, DirtyBubbleRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MAN_RAY, ManRayRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.FLYING_DUTCHMAN, FlyingDutchmanRenderer::new);
-		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.JELLYFISH, JellyfishRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB.get(), SpongeBobRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.PATRICK.get(), PatrickRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SQUIDWARD.get(), SquidwardRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MR_KRABS.get(), MrKrabsRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SANDY.get(), SandyRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.SQUILIAM.get(), SquiliamRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MERMAID_MAN.get(), MermaidManRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.BARNACLE_BOY.get(), BarnacleBoyRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.PLANKTON.get(), PlanktonRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.DIRTY_BUBBLE.get(), DirtyBubbleRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.MAN_RAY.get(), ManRayRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.FLYING_DUTCHMAN.get(), FlyingDutchmanRenderer::new);
+		event.registerEntityRenderer(SpongebobsquarepantsmodreloadedModEntities.JELLYFISH.get(), JellyfishRenderer::new);
 	}
 }

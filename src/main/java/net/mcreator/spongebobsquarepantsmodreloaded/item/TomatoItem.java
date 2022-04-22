@@ -13,6 +13,5 @@ public class TomatoItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("tomato");
 	}
 }

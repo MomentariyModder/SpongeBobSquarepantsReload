@@ -1,3 +1,4 @@
+
 package net.mcreator.spongebobsquarepantsmodreloaded.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

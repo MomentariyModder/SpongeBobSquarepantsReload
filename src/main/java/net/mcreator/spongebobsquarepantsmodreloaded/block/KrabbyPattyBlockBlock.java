@@ -37,7 +37,6 @@ public class KrabbyPattyBlockBlock extends Block {
 	public KrabbyPattyBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.LILY_PAD).strength(0f, 1f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("krabby_patty_block");
 	}
 
 	@Override
@@ -57,8 +56,8 @@ public class KrabbyPattyBlockBlock extends Block {
 	}
 
 	@Override
-	public ItemStack getPickBlock(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY);
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get());
 	}
 
 	@Override
@@ -66,7 +65,7 @@ public class KrabbyPattyBlockBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY));
+		return Collections.singletonList(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get()));
 	}
 
 	@Override
@@ -86,7 +85,7 @@ public class KrabbyPattyBlockBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.KRABBY_PATTY_BLOCK,
+		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.KRABBY_PATTY_BLOCK.get(),
 				renderType -> renderType == RenderType.cutout());
 	}
 }
