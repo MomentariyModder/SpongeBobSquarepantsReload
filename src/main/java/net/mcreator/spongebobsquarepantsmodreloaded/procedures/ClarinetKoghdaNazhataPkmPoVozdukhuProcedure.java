@@ -8,7 +8,6 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -19,8 +18,7 @@ import javax.annotation.Nullable;
 public class ClarinetKoghdaNazhataPkmPoVozdukhuProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
 		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ());
 	}
@@ -32,7 +30,7 @@ public class ClarinetKoghdaNazhataPkmPoVozdukhuProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+				_level.playSound(null, new BlockPos(x, y, z),
 						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("spongebobsquarepantsmodreloaded:clarinet")), SoundSource.MUSIC, 1,
 						1);
 			} else {

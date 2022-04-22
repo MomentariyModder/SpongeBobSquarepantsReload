@@ -1,3 +1,4 @@
+
 package net.mcreator.spongebobsquarepantsmodreloaded.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +19,6 @@ public class MermaidManRenderer extends HumanoidMobRenderer<MermaidManEntity, Hu
 
 	@Override
 	public ResourceLocation getTextureLocation(MermaidManEntity entity) {
-		return new ResourceLocation("spongebobsquarepantsmodreloaded:textures/ermaidan.png");
+		return new ResourceLocation("spongebobsquarepantsmodreloaded:textures/mermaid.png");
 	}
 }

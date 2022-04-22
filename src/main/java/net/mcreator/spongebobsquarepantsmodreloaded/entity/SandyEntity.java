@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -28,8 +28,8 @@ import net.mcreator.spongebobsquarepantsmodreloaded.init.Spongebobsquarepantsmod
 import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModEntities;
 
 public class SandyEntity extends PathfinderMob {
-	public SandyEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.SANDY, world);
+	public SandyEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.SANDY.get(), world);
 	}
 
 	public SandyEntity(EntityType<SandyEntity> type, Level world) {
@@ -61,7 +61,7 @@ public class SandyEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KK_COCA_COLA));
+		this.spawnAtLocation(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KK_COCA_COLA.get()));
 	}
 
 	@Override

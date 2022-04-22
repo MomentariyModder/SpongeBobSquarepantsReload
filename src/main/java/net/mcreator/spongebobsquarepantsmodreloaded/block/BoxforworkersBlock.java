@@ -1,7 +1,7 @@
 
 package net.mcreator.spongebobsquarepantsmodreloaded.block;
 
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -63,7 +63,6 @@ public class BoxforworkersBlock extends Block implements SimpleWaterloggedBlock,
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("boxforworkers");
 	}
 
 	@Override
@@ -104,14 +103,14 @@ public class BoxforworkersBlock extends Block implements SimpleWaterloggedBlock,
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 1;
 		return false;
 	}
@@ -189,6 +188,7 @@ public class BoxforworkersBlock extends Block implements SimpleWaterloggedBlock,
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.BOXFORWORKERS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SpongebobsquarepantsmodreloadedModBlocks.BOXFORWORKERS.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 }

@@ -17,7 +17,7 @@ public class SpongebobsquarepantsmodreloadedModTabs {
 		TAB_SPONGE_BOB_GUI = new CreativeModeTab("tabsponge_bob_gui") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY);
+				return new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

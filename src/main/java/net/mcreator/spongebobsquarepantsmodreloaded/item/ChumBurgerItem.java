@@ -17,7 +17,6 @@ public class ChumBurgerItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("chum_burger");
 	}
 
 	@Override

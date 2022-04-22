@@ -66,12 +66,6 @@ public class Modelpatrick<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-			float headPitch) {
-
-	}
-
-	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay,
 			float red, float green, float blue, float alpha) {
 		cuerpo.render(poseStack, buffer, packedLight, packedOverlay);
@@ -79,5 +73,13 @@ public class Modelpatrick<T extends Entity> extends EntityModel<T> {
 		rightLeg.render(poseStack, buffer, packedLight, packedOverlay);
 		leftArm.render(poseStack, buffer, packedLight, packedOverlay);
 		rightArm.render(poseStack, buffer, packedLight, packedOverlay);
+	}
+
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
+		this.rightLeg.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		this.rightArm.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
+		this.leftArm.xRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
+		this.leftLeg.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 	}
 }

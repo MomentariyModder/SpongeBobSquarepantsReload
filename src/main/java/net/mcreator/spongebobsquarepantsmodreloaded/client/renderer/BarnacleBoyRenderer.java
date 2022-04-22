@@ -1,3 +1,4 @@
+
 package net.mcreator.spongebobsquarepantsmodreloaded.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +19,6 @@ public class BarnacleBoyRenderer extends HumanoidMobRenderer<BarnacleBoyEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(BarnacleBoyEntity entity) {
-		return new ResourceLocation("spongebobsquarepantsmodreloaded:textures/barnacleboy4428.png");
+		return new ResourceLocation("spongebobsquarepantsmodreloaded:textures/barnacle_boy.png");
 	}
 }

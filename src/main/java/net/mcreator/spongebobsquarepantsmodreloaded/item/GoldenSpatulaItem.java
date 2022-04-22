@@ -10,7 +10,6 @@ import net.mcreator.spongebobsquarepantsmodreloaded.init.Spongebobsquarepantsmod
 public class GoldenSpatulaItem extends Item {
 	public GoldenSpatulaItem() {
 		super(new Item.Properties().tab(SpongebobsquarepantsmodreloadedModTabs.TAB_SPONGE_BOB_GUI).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("golden_spatula");
 	}
 
 	@Override

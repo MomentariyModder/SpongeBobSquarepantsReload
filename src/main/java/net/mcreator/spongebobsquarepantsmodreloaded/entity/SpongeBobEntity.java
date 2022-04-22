@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.Level;
@@ -29,8 +29,8 @@ import net.mcreator.spongebobsquarepantsmodreloaded.init.Spongebobsquarepantsmod
 import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModEntities;
 
 public class SpongeBobEntity extends PathfinderMob {
-	public SpongeBobEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB, world);
+	public SpongeBobEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB.get(), world);
 	}
 
 	public SpongeBobEntity(EntityType<SpongeBobEntity> type, Level world) {
@@ -62,7 +62,7 @@ public class SpongeBobEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY));
+		this.spawnAtLocation(new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get()));
 	}
 
 	@Override
@@ -81,7 +81,7 @@ public class SpongeBobEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		DungeonHooks.addDungeonMob(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB, 180);
+		DungeonHooks.addDungeonMob(SpongebobsquarepantsmodreloadedModEntities.SPONGE_BOB.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

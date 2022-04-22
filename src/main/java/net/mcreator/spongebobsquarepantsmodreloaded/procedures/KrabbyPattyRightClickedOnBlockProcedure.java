@@ -13,10 +13,9 @@ public class KrabbyPattyRightClickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), SpongebobsquarepantsmodreloadedModBlocks.KRABBY_PATTY_BLOCK.defaultBlockState(),
-				3);
+		world.setBlock(new BlockPos(x, y + 1, z), SpongebobsquarepantsmodreloadedModBlocks.KRABBY_PATTY_BLOCK.get().defaultBlockState(), 3);
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY);
+			ItemStack _stktoremove = new ItemStack(SpongebobsquarepantsmodreloadedModItems.KRABBY_PATTY.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 	}

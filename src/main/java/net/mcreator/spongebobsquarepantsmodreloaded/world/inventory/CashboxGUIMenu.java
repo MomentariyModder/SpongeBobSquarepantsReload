@@ -79,91 +79,91 @@ public class CashboxGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.PENNY == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.PENNY.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.PENNY == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.PENNY.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.NICKEL == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.NICKEL.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 61, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 79, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 79, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 97, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 97, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.ONE_DOLLAR.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 115, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.NICKEL == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.NICKEL.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 115, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.DIME == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.DIME.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 115, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (SpongebobsquarepantsmodreloadedModItems.QUARTER == stack.getItem());
+				return (SpongebobsquarepantsmodreloadedModItems.QUARTER.get() == stack.getItem());
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

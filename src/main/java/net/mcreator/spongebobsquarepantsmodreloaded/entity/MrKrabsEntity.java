@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -26,8 +26,8 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.spongebobsquarepantsmodreloaded.init.SpongebobsquarepantsmodreloadedModEntities;
 
 public class MrKrabsEntity extends PathfinderMob {
-	public MrKrabsEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.MR_KRABS, world);
+	public MrKrabsEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.MR_KRABS.get(), world);
 	}
 
 	public MrKrabsEntity(EntityType<MrKrabsEntity> type, Level world) {

@@ -2,8 +2,8 @@
 package net.mcreator.spongebobsquarepantsmodreloaded.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
@@ -36,8 +36,8 @@ public class FlyingDutchmanEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.GREEN,
 			ServerBossEvent.BossBarOverlay.PROGRESS);
 
-	public FlyingDutchmanEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(SpongebobsquarepantsmodreloadedModEntities.FLYING_DUTCHMAN, world);
+	public FlyingDutchmanEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(SpongebobsquarepantsmodreloadedModEntities.FLYING_DUTCHMAN.get(), world);
 	}
 
 	public FlyingDutchmanEntity(EntityType<FlyingDutchmanEntity> type, Level world) {
@@ -107,7 +107,7 @@ public class FlyingDutchmanEntity extends Monster {
 				}
 			}
 		});
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
 	}
 
 	@Override

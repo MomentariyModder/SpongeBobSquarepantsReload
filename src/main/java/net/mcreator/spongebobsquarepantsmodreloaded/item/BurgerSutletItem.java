@@ -13,6 +13,5 @@ public class BurgerSutletItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(18).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("burger_sutlet");
 	}
 }
